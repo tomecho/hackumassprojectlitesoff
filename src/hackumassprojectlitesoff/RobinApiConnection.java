@@ -33,5 +33,8 @@ public class RobinApiConnection {
 	public String[] getUsers() throws JSONException{
         return p.getUsers();
 	}
+	public boolean getStatus() throws JSONException{
+		return (p.getStatus().equals("OK"));
+	}
 }	
 
