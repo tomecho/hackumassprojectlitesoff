@@ -4,10 +4,11 @@ import java.io.IOException;
 
 import org.json.JSONException;
 
+//author Thomas Peck
 public class Hackumassprojectlitesoff {
 	public static void main(String args[]) throws IOException, JSONException {
-		new BroadcastPresence(); //let apps know there is a hub around.
-		System.out.println("in parallel");
+		new BroadcastPresence();
+		//let apps know there is a hub around.
 		/*RobinApiConnection rac = new RobinApiConnection("https://api.robinpowered.com/v1.0/spaces/763/presence", 
 				"lFfjRcer4Pd6zS229nEVuIuG6NhFE3RMnuOU5F1Rjh2OD3xRbBZO215hinjkRxQOJ6f6ULoMCvXUHIl7gLgWU80y377HNwoPXWc0jGVnspVP1zt6pc8tFVTAIDViklPi");
 		String[] users = rac.getUsers();

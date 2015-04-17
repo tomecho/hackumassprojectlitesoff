@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
+//author Thomas Peck
 public class Paraser {
 	String data;
 	public Paraser(String json){

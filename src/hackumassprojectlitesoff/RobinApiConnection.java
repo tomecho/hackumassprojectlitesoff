@@ -8,7 +8,7 @@ import java.net.URLConnection;
 import java.util.ArrayList;
 
 import org.json.JSONException;
-
+//Author Thomas Peck
 public class RobinApiConnection {
 	Paraser p;
 	public RobinApiConnection(String url,String auth) throws IOException, JSONException{
