@@ -37,7 +37,7 @@ public class BroadcastPresence implements Runnable{
 			DatagramPacket p = new DatagramPacket(data, data.length, broadAddress, 8000);
 			try {
 				s.send(p);
-				System.out.println((char)27 + "[32mIs there anybody out there?");
+				System.out.println((char)27 + "[32mIs there anybody out there?"+(char)27 +"[0m"); //that strange stuff at the front makes the text green on linux
 			} catch (IOException e) {
 				System.err.println("failed to send packet");
 				e.printStackTrace();
@@ -48,17 +48,13 @@ public class BroadcastPresence implements Runnable{
 		}
 	}
 	public void run(){
-		try{
-			long next;
-			while(true){
-				next = (new Date().getTime()) + 1000l; //60 seconds from now
-				while((new Date().getTime()) < next){
-					//wait around till the now is greater than next
-				}
-				Broadcast();
+		long next;
+		while(true){
+			next = (new Date().getTime()) + 1000l; //60 seconds from now
+			while((new Date().getTime()) < next){
+				//wait around till the now is greater than next
 			}
-		} finally {
-			
+			Broadcast();
 		}
 	}
 	public InetAddress getBroadcastAddress() {
